@@ -84,7 +84,7 @@ class ProfileSetupScreen extends StatelessWidget {
 
   void onSubmit() {
     if (_profileSetupKey.currentState!.validate()) {
-      // navigate
+      // navigate to homepage
       Get.toNamed(AppRoutes.bottomNavBarScreen);
     }
   }
