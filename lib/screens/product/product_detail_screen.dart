@@ -1,6 +1,7 @@
 import 'package:athathi/export.dart';
 import 'package:athathi/screens/home_screen/widgets/carouselView_widget.dart';
 import 'package:athathi/screens/product/widgets/quantity_count_widget.dart';
+import 'package:athathi/screens/widgets/custom_elevated_button.dart';
 
 class ProductDetailScreen extends StatelessWidget {
   const ProductDetailScreen({super.key});
@@ -18,7 +19,22 @@ class ProductDetailScreen extends StatelessWidget {
             children: [
               CustomCarouselView(),
               gap24,
-              SizedBox(height: 100, child: CustomQuantityCount()),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [Text("data"), Icon(Icons.stacked_line_chart)],
+              ),
+              Text("data"),
+              Text("data"),
+              Divider(),
+              CustomQuantityCount(),
+              Divider(),
+              Text("data"),
+              Divider(),
+              Text("data"),
+              Divider(),
+              Text("data"),
+              Divider(),
+              CustomElevatedButton(btnName: "Add to Cart"),
             ],
           ),
         ),

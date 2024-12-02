@@ -45,14 +45,15 @@ class CustomTextField extends StatelessWidget {
             width: btnWidth,
             child: TextFormField(
               // initialValue: "124",
-              style: TextStyle(fontSize: 16),
+              style: TextStyle(color: Colors.red, fontSize: 16),
               controller: controller,
               onTap: onTapped,
               obscureText: obscure,
               keyboardType: keyboard,
               validator: validation,
               decoration: InputDecoration(
-                label: Text(lable ?? ""),
+                label: Text(hint ?? ""),
+                floatingLabelBehavior: FloatingLabelBehavior.never,
                 hintText: hint ?? "no hint",
                 contentPadding: ptf16_10,
                 border: OutlineInputBorder(
