@@ -7,12 +7,13 @@ import 'package:athathi/screens/widgets/custom_outlined_button.dart';
 import 'package:athathi/screens/widgets/custom_text_field.dart';
 
 class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
+  LoginScreen({super.key});
+
+  final _mobileC = TextEditingController();
+  final _countryCodeC = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
-    final _mobileC = TextEditingController();
-    final _countryCodeC = TextEditingController();
     return Material(
       child: SingleChildScrollView(
         child: Padding(

@@ -1,7 +1,7 @@
 import 'package:athathi/export.dart';
 import 'package:athathi/screens/home_screen/home_screen.dart';
-import 'package:athathi/screens/product_screen/category_screen.dart';
-import 'package:athathi/screens/profile_screen/cart_screen.dart';
+import 'package:athathi/screens/product/category_screen.dart';
+import 'package:athathi/screens/user_profile/cart_screen.dart';
 
 class BottomNavbar extends StatefulWidget {
   const BottomNavbar({super.key});

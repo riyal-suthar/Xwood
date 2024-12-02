@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:athathi/export.dart';
-import 'package:athathi/screens/product_screen/widgets/category_item.dart';
+import 'package:athathi/screens/product/widgets/category_item.dart';
 
 class CategoryScreen extends StatelessWidget {
   CategoryScreen({super.key});

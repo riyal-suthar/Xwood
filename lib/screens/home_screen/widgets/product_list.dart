@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:athathi/screens/product_screen/widgets/product_item.dart';
+import 'package:athathi/screens/product/widgets/product_item.dart';
 
 class CustomProductListView extends StatefulWidget {
   const CustomProductListView({super.key});

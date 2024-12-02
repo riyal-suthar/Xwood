@@ -1,5 +1,4 @@
 import 'package:athathi/core/config/theme/theme.dart';
-import 'package:flutter/material.dart';
 
 import 'export.dart';
 
@@ -16,28 +15,26 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      // textDirection: Tex,
       theme: ThemeData(
         useMaterial3: true,
+        // fontFamily: 'Geologica',
         brightness: AppMaterialTheme.lightScheme().brightness,
         colorScheme: AppMaterialTheme.lightScheme(),
         textTheme: TextTheme().apply(
           bodyColor: AppMaterialTheme.lightScheme().onSurface,
           displayColor: AppMaterialTheme.lightScheme().onSurface,
         ),
-        scaffoldBackgroundColor: AppMaterialTheme.lightScheme().background,
         canvasColor: AppMaterialTheme.lightScheme().surface,
       ),
       darkTheme: ThemeData(
         useMaterial3: true,
-        fontFamily: "Geologica",
+        fontFamily: 'Geologica',
         brightness: AppMaterialTheme.darkScheme().brightness,
         colorScheme: AppMaterialTheme.darkScheme(),
-        scaffoldBackgroundColor: AppMaterialTheme.darkScheme().background,
         canvasColor: AppMaterialTheme.darkScheme().surface,
       ),
       // home: CustomProductListView(),
-      initialRoute: AppRoutes.splashScreen,
+      initialRoute: AppRoutes.filterScreen,
       getPages: AppRoutes.getPages,
     );
   }

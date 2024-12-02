@@ -65,6 +65,7 @@ const EdgeInsets p48 = EdgeInsets.all(48);
 const EdgeInsets ptf16_10 = EdgeInsets.symmetric(horizontal: 16, vertical: 10);
 
 EdgeInsets pad(double padding) => EdgeInsets.all(padding);
+
 const EdgeInsets pyb16 = EdgeInsets.only(bottom: 16);
 
 const EdgeInsets px4 = EdgeInsets.symmetric(horizontal: 4);

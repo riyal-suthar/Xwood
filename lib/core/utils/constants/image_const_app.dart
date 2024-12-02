@@ -1,5 +1,6 @@
 class AppAssetsConst {
   static const asset = "assets/objects";
+
   static const String athathiSvg = "$asset/Athathi.svg";
   static const String athathiLogoWhite = "$asset/AthathiLogoWhite.svg";
   static const String chairSvg = "$asset/Chair.svg";

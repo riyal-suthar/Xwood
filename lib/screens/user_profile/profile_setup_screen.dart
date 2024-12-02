@@ -4,29 +4,29 @@ import 'package:athathi/screens/widgets/custom_elevated_button.dart';
 import 'package:athathi/screens/widgets/custom_text_field.dart';
 
 class ProfileSetupScreen extends StatelessWidget {
-  const ProfileSetupScreen({super.key});
+  ProfileSetupScreen({super.key});
+
+  final _profileSetupKey = GlobalKey<FormState>();
+  final TextEditingController _nameC = TextEditingController();
+  final TextEditingController _emailC = TextEditingController();
+  final TextEditingController _mobileNumberC = TextEditingController();
+  final TextEditingController _contryC = TextEditingController();
+  final TextEditingController _cityC = TextEditingController();
+  final TextEditingController _areaC = TextEditingController();
+  final TextEditingController _steetNoC = TextEditingController();
+  final TextEditingController _avenueC = TextEditingController();
+  final TextEditingController _buildingNoC = TextEditingController();
+  final TextEditingController _flooreC = TextEditingController();
+  final TextEditingController _flatC = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
-    // GlobalKey _profileSetupKey = GlobalKey("user_form");
-    final TextEditingController _nameC = TextEditingController();
-    final TextEditingController _emailC = TextEditingController();
-    final TextEditingController _mobileNumberC = TextEditingController();
-    final TextEditingController _contryC = TextEditingController();
-    final TextEditingController _cityC = TextEditingController();
-    final TextEditingController _areaC = TextEditingController();
-    final TextEditingController _steetNoC = TextEditingController();
-    final TextEditingController _avenueC = TextEditingController();
-    final TextEditingController _buildingNoC = TextEditingController();
-    final TextEditingController _flooreC = TextEditingController();
-    final TextEditingController _flatC = TextEditingController();
-
     return Material(
       child: SingleChildScrollView(
         child: Padding(
           padding: p24,
           child: Form(
-            // key: ,
+            key: _profileSetupKey,
             child: Column(
               mainAxisSize: MainAxisSize.min,
               // crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -42,8 +42,8 @@ class ProfileSetupScreen extends StatelessWidget {
                 Text(
                   "Complete your profile to access all the features",
                   style: TextStyle(
-                    fontSize: 28,
-                    fontWeight: FontWeight.bold,
+                    fontSize: 16,
+                    fontWeight: FontWeight.w300,
                     color: AppColorConst.scrim,
                   ),
                 ),
@@ -83,6 +83,8 @@ class ProfileSetupScreen extends StatelessWidget {
   }
 
   void onSubmit() {
-    Get.toNamed(AppRoutes.bottomNavBarScreen);
+    if (_profileSetupKey.currentState!.validate()) {
+      Get.toNamed(AppRoutes.bottomNavBarScreen);
+    }
   }
 }

@@ -174,58 +174,58 @@ class AppMaterialTheme {
     brightness: colorScheme.brightness,
     colorScheme: colorScheme,
     fontFamily: "Geologica",
-    textTheme: TextTheme(
-      //
-      // ),
-      //   .copyWith(
-      labelSmall: TextStyle(color: AppColorConst.primary, fontSize: 10),
-      labelLarge: TextStyle(
-        color: AppColorConst.primary,
-        fontSize: 12,
-        fontWeight: FontWeight.w600,
-      ),
-      bodySmall: TextStyle(
-        color: AppColorConst.scrim,
-        fontSize: 12,
-        fontWeight: FontWeight.w300,
-      ),
-      bodyMedium: TextStyle(color: AppColorConst.scrim, fontSize: 40),
-      bodyLarge: TextStyle(
-        color: AppColorConst.ktextfieldPrimary,
-        fontSize: 16,
-        fontWeight: FontWeight.w400,
-      ),
-      titleSmall: TextStyle(
-        color: AppColorConst.ktextfieldPrimary.shade200,
-        fontSize: 14,
-        fontWeight: FontWeight.w400,
-      ),
-      titleMedium: TextStyle(
-        color: AppColorConst.primary,
-        fontSize: 16,
-        fontWeight: FontWeight.w700,
-      ),
-      titleLarge: TextStyle(
-        color: AppColorConst.primary,
-        fontSize: 20,
-        fontWeight: FontWeight.w700,
-      ),
-      headlineMedium: TextStyle(
-        color: AppColorConst.primary,
-        fontSize: 18,
-        fontWeight: FontWeight.w500,
-      ),
-      headlineLarge: TextStyle(
-        color: AppColorConst.primary,
-        fontSize: 24,
-        fontWeight: FontWeight.w700,
-      ),
-      displayLarge: TextStyle(
-        color: AppColorConst.primary,
-        fontSize: 26,
-        fontWeight: FontWeight.w700,
-      ),
-    ),
+    // textTheme: TextTheme(
+    //   //
+    //   // ),
+    //   //   .copyWith(
+    //   labelSmall: TextStyle(color: AppColorConst.primary, fontSize: 10),
+    //   labelLarge: TextStyle(
+    //     color: AppColorConst.primary,
+    //     fontSize: 12,
+    //     fontWeight: FontWeight.w600,
+    //   ),
+    //   bodySmall: TextStyle(
+    //     color: AppColorConst.scrim,
+    //     fontSize: 12,
+    //     fontWeight: FontWeight.w300,
+    //   ),
+    //   bodyMedium: TextStyle(color: AppColorConst.scrim, fontSize: 40),
+    //   bodyLarge: TextStyle(
+    //     color: AppColorConst.ktextfieldPrimary,
+    //     fontSize: 16,
+    //     fontWeight: FontWeight.w400,
+    //   ),
+    //   titleSmall: TextStyle(
+    //     color: AppColorConst.ktextfieldPrimary.shade200,
+    //     fontSize: 14,
+    //     fontWeight: FontWeight.w400,
+    //   ),
+    //   titleMedium: TextStyle(
+    //     color: AppColorConst.primary,
+    //     fontSize: 16,
+    //     fontWeight: FontWeight.w700,
+    //   ),
+    //   titleLarge: TextStyle(
+    //     color: AppColorConst.primary,
+    //     fontSize: 20,
+    //     fontWeight: FontWeight.w700,
+    //   ),
+    //   headlineMedium: TextStyle(
+    //     color: AppColorConst.primary,
+    //     fontSize: 18,
+    //     fontWeight: FontWeight.w500,
+    //   ),
+    //   headlineLarge: TextStyle(
+    //     color: AppColorConst.primary,
+    //     fontSize: 24,
+    //     fontWeight: FontWeight.w700,
+    //   ),
+    //   displayLarge: TextStyle(
+    //     color: AppColorConst.primary,
+    //     fontSize: 26,
+    //     fontWeight: FontWeight.w700,
+    //   ),
+    // ),
     bottomNavigationBarTheme: _navigationBarTheme,
     scaffoldBackgroundColor: colorScheme.background,
     canvasColor: colorScheme.surface,

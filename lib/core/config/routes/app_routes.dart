@@ -1,12 +1,12 @@
 import 'package:athathi/screens/auth/login_screen.dart';
 import 'package:athathi/screens/auth/otp_verification_screen.dart';
 import 'package:athathi/screens/home_screen/home_screen.dart';
-import 'package:athathi/screens/intro_screens/choose_lang_screen.dart';
-import 'package:athathi/screens/intro_screens/get_start_screen.dart';
-import 'package:athathi/screens/intro_screens/splash_screen.dart';
-import 'package:athathi/screens/product_screen/category_screen.dart';
-import 'package:athathi/screens/profile_screen/profile_setup_screen.dart';
-import 'package:flutter/material.dart';
+import 'package:athathi/screens/product/filter/fliter_screen.dart';
+import 'package:athathi/screens/welcome/choose_lang_screen.dart';
+import 'package:athathi/screens/welcome/get_start_screen.dart';
+import 'package:athathi/screens/welcome/splash_screen.dart';
+import 'package:athathi/screens/product/category_screen.dart';
+import 'package:athathi/screens/user_profile/profile_setup_screen.dart';
 import 'package:get/get_navigation/src/routes/get_route.dart';
 
 import '../../../screens/home_screen/bottom_navbar.dart';
@@ -63,7 +63,7 @@ class AppRoutes {
     GetPage(name: homeScreen, page: () => HomeScreen()),
     GetPage(name: profileSetupScreen, page: () => ProfileSetupScreen()),
     GetPage(name: categoryScreen, page: () => CategoryScreen()),
-    // GetPage(name: splashScreen, page: () => Container()),
+    GetPage(name: filterScreen, page: () => ProductFilterScreen()),
     // GetPage(name: splashScreen, page: () => Container()),
     // GetPage(name: splashScreen, page: () => Container()),
   ];

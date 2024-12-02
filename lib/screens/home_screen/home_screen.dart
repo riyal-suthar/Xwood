@@ -5,12 +5,11 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:athathi/core/config/routes/app_routes.dart';
 import 'package:athathi/core/utils/constants/ui_const.dart';
-import 'package:athathi/screens/home_screen/home_screen.dart';
 import 'package:athathi/screens/home_screen/widgets/carouselView_widget.dart';
 import 'package:athathi/screens/home_screen/widgets/product_list.dart';
 import 'package:athathi/screens/home_screen/widgets/title_text_widget.dart';
-import 'package:athathi/screens/product_screen/widgets/category_item.dart';
-import 'package:athathi/screens/product_screen/widgets/product_item.dart';
+import 'package:athathi/screens/product/widgets/category_item.dart';
+import 'package:athathi/screens/product/widgets/product_item.dart';
 import 'package:athathi/screens/widgets/custom_appbar.dart';
 
 class HomeScreen extends StatefulWidget {
