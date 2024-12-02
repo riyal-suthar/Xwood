@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
         canvasColor: AppMaterialTheme.darkScheme().surface,
       ),
       // home: CustomProductListView(),
-      initialRoute: AppRoutes.filterScreen,
+      initialRoute: AppRoutes.productDetailScreen,
       getPages: AppRoutes.getPages,
     );
   }

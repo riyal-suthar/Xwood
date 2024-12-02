@@ -2,6 +2,7 @@ import 'package:athathi/screens/auth/login_screen.dart';
 import 'package:athathi/screens/auth/otp_verification_screen.dart';
 import 'package:athathi/screens/home_screen/home_screen.dart';
 import 'package:athathi/screens/product/filter/fliter_screen.dart';
+import 'package:athathi/screens/product/product_detail_screen.dart';
 import 'package:athathi/screens/welcome/choose_lang_screen.dart';
 import 'package:athathi/screens/welcome/get_start_screen.dart';
 import 'package:athathi/screens/welcome/splash_screen.dart';
@@ -27,6 +28,7 @@ class AppRoutes {
 
   static const String categoryScreen = "/categoryScreen";
   static const String productScreen = "/productScreen";
+  static const String productDetailScreen = "/productDetailScreen";
   static const String reviewScreen = "/reviewScreen";
 
   static const String cartScreen = "/cartScreen";
@@ -64,7 +66,7 @@ class AppRoutes {
     GetPage(name: profileSetupScreen, page: () => ProfileSetupScreen()),
     GetPage(name: categoryScreen, page: () => CategoryScreen()),
     GetPage(name: filterScreen, page: () => ProductFilterScreen()),
-    // GetPage(name: splashScreen, page: () => Container()),
+    GetPage(name: productDetailScreen, page: () => ProductDetailScreen()),
     // GetPage(name: splashScreen, page: () => Container()),
   ];
 }

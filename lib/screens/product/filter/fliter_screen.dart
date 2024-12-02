@@ -13,12 +13,15 @@ class ProductFilterScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(title: Text("Filter Screen")),
       body: Flex(
         direction: Axis.horizontal,
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Flexible(
             flex: 1,
+            fit: FlexFit.tight,
             child: ListView.separated(
               itemCount: _listPages.length,
               itemBuilder: (context, index) {
@@ -34,7 +37,15 @@ class ProductFilterScreen extends StatelessWidget {
               },
             ),
           ),
-          Expanded(flex: 2, child: Material(child: _listPages[_page.value])),
+          Flexible(
+            flex: 8,
+            child: ValueListenableBuilder(
+              valueListenable: _page,
+              builder: (BuildContext context, value, Widget? child) {
+                return Material(child: _listPages[value]);
+              },
+            ),
+          ),
         ],
       ),
     );
